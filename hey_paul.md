@@ -1,6 +1,15 @@
 Hey!
 
-The model is working. I think that the best way to take advantage of this model is to use an application related to public opinion. I think that because the model was trained on text written in the internet, that is, things written by random people. The things that this model is going to say are the things that most people are saying. Thus, it's a representative model. It's also good because you can induce the model to talk about any given topic, and to produce the next sentences it's taking into account lots of opinions, not only one opinion from one cite. Say you are a government and you want to know what the public thinks about one policy? Instead of doing a poll you just simulate it. Another very interesting thing is that we can generate a debate between people and simulate how a conversation of two person would develop.
+how to run it?
+1) git clone this repo
+2) run the command "sh download_model.sh 117M" you will need gsutil
+3) "pip3 install -r requirements.txt" or "pip install -r requirements.txt" depending on your pip
+4) everything is installed now, you can run the program by running "python src/hive.py"
+
+(if those steps don't work, what you can do is to follow the instructiopns from the openai model https://github.com/openai/gpt-2 and then add the changes I made to the openai repo. There are only two files we care about: src/hive.py and  src/interactive_conditional_samples.py so you can add hive.py and modify interactive_conditional_samples in the openai repo)
+
+The model is working. I think that the best way to take advantage of this model is to use an application related to public opinion. I think that because the model was trained on text written in the internet, that is, things written by random people. The things that this model is going to say are the things that most people are saying. Thus, it's a representative model. It's also good because you can induce the model to talk about any given topic, and to produce the next sentences it's taking into account lots of opinions, not only one opinion from one cite. Say you are a government and you want to know what the public thinks about one policy? Instead of doing a poll you just simulate it. Another very interesting thing is that we can generate a debate between people and simulate how a conversation of several people would develop.
+
 
 potential next thigns to do
 * A next step could be to prune the generated text from the bots instead of completely feeding it into the model.
