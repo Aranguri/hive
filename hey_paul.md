@@ -2,8 +2,10 @@ Hey!
 
 The model is working. I think that the best way to take advantage of this model is to use an application related to public opinion. I think that because the model was trained on text written in the internet, that is, things written by random people. The things that this model is going to say are the things that most people are saying. Thus, it's a representative model. It's also good because you can induce the model to talk about any given topic, and to produce the next sentences it's taking into account lots of opinions, not only one opinion from one cite. Say you are a government and you want to know what the public thinks about one policy? Instead of doing a poll you just simulate it. Another very interesting thing is that we can generate a debate between people and simulate how a conversation of two person would develop.
 
-Technical details
+potential next thigns to do
 * A next step could be to prune the generated text from the bots instead of completely feeding it into the model.
+* integrate it with the program paul started to write
+* add more intervention with humans (now humans are only giving input in the beginning.)
 * We can experiment with
     * what we add in the header variable (check hive.py)
     * how we structure content + header. (more on this in line 33 in file hive.py)
